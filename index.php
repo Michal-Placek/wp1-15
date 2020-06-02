@@ -1,3 +1,14 @@
+<?php
+ 
+$submit = filter_input(INPUT_POST, 'submit');
+ 
+$paste = filter_input(INPUT_POST, 'paste');
+$ham = filter_input(INPUT_POST, 'ham');
+$cheese = filter_input(INPUT_POST, 'cheese');
+$tomato = filter_input(INPUT_POST, 'tomato');
+ 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,6 +34,9 @@
 
         <label for="cheese">Sýr</label>
         <input type="checkbox" name="cheese" id="cheese">
+
+        <label for="tomato">Rajče</label>
+        <input type="checkbox" name="tomato" id="tomato">
 
         <br>
         <br>
